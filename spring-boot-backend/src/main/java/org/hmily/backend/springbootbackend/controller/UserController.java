@@ -1,5 +1,13 @@
 package org.hmily.backend.springbootbackend.controller;
 
+import java.util.List;
+
+import org.hmily.backend.springbootbackend.domain.User;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 @RestController
 @RequestMapping("/api")
 public class UserController {
@@ -16,7 +24,6 @@ public class UserController {
     @RequestMapping(value ="/user", method = RequestMethod.POST)
     public void UserAdd(User user){
         //userService.AddUser(user);
-        return null;
     }
 
     @RequestMapping(value ="/user", method = RequestMethod.PUT)
